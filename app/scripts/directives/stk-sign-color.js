@@ -9,7 +9,8 @@ angular.module('stockDogApp')
           var newSign = parseFloat(newVal);
           if (newSign > 0) {
             $element[0].style.color = 'Green';
-          } else {
+          } 
+          else {
             $element[0].style.color = 'Red';
           }
         });
