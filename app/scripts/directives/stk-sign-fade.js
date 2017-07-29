@@ -9,6 +9,7 @@ angular.module('stockDogApp')
         $attrs.$observe('stkSignFade', function (newVal) {
           if (oldVal && oldVal == newVal) { return; }
 
+          
           var oldPrice = parseFloat(oldVal);
           var newPrice = parseFloat(newVal);
           oldVal = newVal;
