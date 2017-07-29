@@ -9,6 +9,7 @@ angular.module('stockDogApp')
         stock: '=',
         isLast: '='
       },
+      
       link: function ($scope, $element, $attrs, stockTableCtrl) {
         // Create tooltip for stock-row
         $element.tooltip({
