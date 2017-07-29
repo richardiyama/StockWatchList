@@ -12,6 +12,7 @@ angular.module('stockDogApp')
         // Initialize variables
         $scope.watchlist = {};
         $scope.currentList = $routeParams.listId;
+       
         var addListModal = $modal({
           scope: $scope,
           template: 'views/templates/addlist-modal.html',
