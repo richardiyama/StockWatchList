@@ -7,6 +7,7 @@ angular.module('stockDogApp')
 
     var update = function (quotes) {
       console.log(quotes);
+     
       // Ensure that the current quotes match registered stocks
       if (quotes.length === stocks.length) {
         _.each(quotes, function (quote, idx) {
