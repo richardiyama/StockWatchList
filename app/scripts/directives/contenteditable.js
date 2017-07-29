@@ -10,7 +10,9 @@ angular.module('stockDogApp')
       link: function($scope, $element, $attrs, ngModelCtrl) {
         if(!ngModelCtrl) { return; } // do nothing if no ng-model
 
+        
         // Read HTML value, then write data to the model or reset the view
+        
         var read = function () {
           var value = $element.html();
           if ($attrs.type === 'number' && !NUMBER_REGEXP.test(value)) {
