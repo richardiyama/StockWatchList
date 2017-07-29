@@ -20,7 +20,8 @@ angular.module('stockDogApp')
       show: false
     });
 
-    $scope.showStockModal = function () {
+   
+  $scope.showStockModal = function () {
       addStockModal.$promise.then(addStockModal.show);
     };
 
