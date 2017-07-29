@@ -14,6 +14,7 @@ angular.module('stockDogApp')
           var newPrice = parseFloat(newVal);
           oldVal = newVal;
 
+         
           if (oldPrice && newPrice) {
             var direction = newPrice - oldPrice >= 0 ? 'up' : 'down';
             $animate.addClass($element, 'change-' + direction, function() {
