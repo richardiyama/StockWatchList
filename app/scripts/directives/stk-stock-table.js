@@ -11,6 +11,7 @@ angular.module('stockDogApp')
       controller: function ($scope) {
         var rows = [];
 
+       
         $scope.$watch('showPercent', function (showPercent) {
           if (showPercent) {
             _.each(rows, function (row) {
